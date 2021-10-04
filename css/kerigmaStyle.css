@@ -1,3 +1,7 @@
+*{
+    font-family:"Raleway",Verdana;
+}
+
 .navRegister{
     height: 50px;
     display: flex;
@@ -12,14 +16,12 @@
     align-items : center;
     justify-content: center;
     background-color: #011f4b;
-    font-family:"Raleway",Verdana;
     color: white;
 }
 
 .registerMain{
     height: 65vh;
     background-color:#b3cde0;
-    font-family:"Raleway",Verdana;
     display: grid;
     grid-template-rows: repeat(4,70px);
     grid-template-columns: 2fr 4fr 2fr;
@@ -166,3 +168,5 @@
     }
 }
   
+
+
