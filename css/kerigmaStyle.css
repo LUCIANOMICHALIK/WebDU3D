@@ -100,7 +100,11 @@
     margin: 0 -2px 0 0;
     background-size: contain;
     background-repeat: no-repeat;
-    transition: all 0.7s ease-in-out 0.3s;
+    transition: all 0.2s ease-in-out 0.2s;
+}
+
+.desktop.socials.flotante:hover{
+    filter: opacity(.5);
 }
 
 .movil.socials.flotante {
@@ -155,6 +159,16 @@
     
 }
 
+.card-img-top:hover{
+    filter: opacity(.5);
+}
+
+
+.botonCompra:hover{
+    font-weight: bold;
+    color: black;
+    background-color: gray;
+}
 
 @media (max-width: 767px) {
     .desktop{

@@ -11,12 +11,16 @@
   <link rel="icon" type="image/x-icon" href="./images/icon.png" />
 
   <link rel="stylesheet" href="css/kerigmaStyle.css">
-  
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
   <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
 
   <meta name="theme-color" content="#7952b3">
   <link href="carousel.css" rel="stylesheet">
@@ -33,11 +37,13 @@
 
       <div class="container-fluid">
         <a class="navbar-brand" href="#top">DU 3D</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miMenu">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+
+        <div class="collapse navbar-collapse" id="miMenu">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="Register.html">Registrate</a>
@@ -65,15 +71,15 @@
   <!-- CARRUSEL -->
   <main id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
-      
+
       <div class="carousel-item active">
         <img src="./images/1.jpg" class="d-block w-100" alt="...">
       </div>
-      
+
       <div class="carousel-item">
         <img src="./images/2.jpg" class="d-block w-100" alt="...">
       </div>
-      
+
       <div class="carousel-item">
         <img src="./images/3.jpg" class="d-block w-100" alt="...">
       </div>
@@ -82,7 +88,7 @@
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </button>
-    
+
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </button>
@@ -102,32 +108,95 @@
     <div class="row">
 
       <div class="card-group">
-        
+
         <div class="card">
           <img src="./images/card1_1.jpg" class="card-img-top" alt="card1_1">
           <div class="card-body">
             <h5 class="card-title">Sostén para auriculares</h5>
             <p class="card-text">Ideal para que tus auriculares gamers no queden tirados en cualquier lugar.</p>
           </div>
-          <a href="#" class="botonCompra">COMPRAR</a>
+          <!-- Button trigger modal -->
+          <button type="button" class="botonCompra" data-toggle="modal" data-target="#modalAuris">COMPRAR</button>
+          <!-- Modal -->
+          <div class="modal fade" id="modalAuris" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Sostén para auriculares</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  DATOS DE LOS AURIS PARA COMPRAR
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="botonCompra">COMPRAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="card">
           <img src="./images/card1_2.jpg" class="card-img-top" alt="card1_2">
           <div class="card-body">
             <h5 class="card-title">Litofanías</h5>
-            <p class="card-text">Tus fotos impresas en 3D pueden revelarse con luz y generar un efecto único. Conseguilo listo para ser usado.</p>
+            <p class="card-text">Tus fotos impresas en 3D pueden revelarse con luz y generar un efecto único. Conseguilo
+              listo para ser usado.</p>
           </div>
-          <a href="#" class="botonCompra">COMPRAR</a>
+          <button type="button" class="botonCompra" data-toggle="modal" data-target="#modalLito">COMPRAR</button>
+          <!-- Modal -->
+          <div class="modal fade" id="modalLito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Litofanías</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  DATOS PARA COMPRAR
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">COMPRAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="card">
           <img src="./images/card1_3.jpg" class="card-img-top" alt="card1_3">
           <div class="card-body">
             <h5 class="card-title">Extensor para celulares</h5>
-            <p class="card-text">Especial para grabaciones o para sostener el celular mientras se hacen otras actividades.</p>
+            <p class="card-text">Especial para grabaciones o para sostener el celular mientras se hacen otras
+              actividades.</p>
           </div>
-          <a href="#" class="botonCompra">COMPRAR</a>
+          <button type="button" class="botonCompra" data-toggle="modal" data-target="#modalExten">COMPRAR</button>
+          <!-- Modal -->
+          <div class="modal fade" id="modalExten" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Extensor para celulares</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  DATOS DE LOS AURIS PARA COMPRAR
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">COMPRAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -144,12 +213,13 @@
     <div class="row">
 
       <div class="card-group">
-        
+
         <div class="card">
           <img src="./images/card2_1.jpg" class="card-img-top" alt="card2_1">
           <div class="card-body">
             <h5 class="card-title">Harry Potter</h5>
-            <p class="card-text">Las varitas para los fans ya no son una cosa lejana. Imprimí todo lo que quieras de esta saga y sentite uno más del Wizarding World.</p>
+            <p class="card-text">Las varitas para los fans ya no son una cosa lejana. Imprimí todo lo que quieras de
+              esta saga y sentite uno más del Wizarding World.</p>
           </div>
           <a href="#" class="botonCompra">COMPRAR</a>
         </div>
@@ -167,7 +237,8 @@
           <img src="./images/card2_3.jpg" class="card-img-top" alt="card2_3">
           <div class="card-body">
             <h5 class="card-title">Pokemón</h5>
-            <p class="card-text">Si sos fan de esta u otras series no dejes de pedirnos lo que siempre soñaste tener.</p>
+            <p class="card-text">Si sos fan de esta u otras series no dejes de pedirnos lo que siempre soñaste tener.
+            </p>
           </div>
           <a href="#" class="botonCompra">COMPRAR</a>
         </div>
@@ -189,7 +260,8 @@
           <img src="./images/card3_1.jpg" class="card-img-top" alt="card3_1">
           <div class="card-body">
             <h5 class="card-title">Veladores modernos</h5>
-            <p class="card-text">Este y otro estilo de veladores únicos y modernos encontralo con nosotros, vienen listos para ser utilizados.</p>
+            <p class="card-text">Este y otro estilo de veladores únicos y modernos encontralo con nosotros, vienen
+              listos para ser utilizados.</p>
           </div>
           <a href="#" class="botonCompra">COMPRAR</a>
         </div>
@@ -198,7 +270,8 @@
           <img src="./images/card3_2.jpg" height="295px" class="card-img-top" alt="card3_2">
           <div class="card-body">
             <h5 class="card-title">Juegos de livings y macetas</h5>
-            <p class="card-text">Nada mejor que decorar tus habitaciones con un estilo moderno. Este y otro tipo de modelos encontralos con nosotros.</p>
+            <p class="card-text">Nada mejor que decorar tus habitaciones con un estilo moderno. Este y otro tipo de
+              modelos encontralos con nosotros.</p>
           </div>
           <a href="#" class="botonCompra">COMPRAR</a>
         </div>
@@ -207,7 +280,8 @@
           <img src="./images/card3_3.jpg" class="card-img-top" alt="card3_3">
           <div class="card-body">
             <h5 class="card-title">Pantallas para luces</h5>
-            <p class="card-text">Ya no es necesario grandes gastos para tener tus luces decoradas según tus gustos. Nuestras impresiones de alta calidad son altamente competentes en el mercado de la decoración.</p>
+            <p class="card-text">Ya no es necesario grandes gastos para tener tus luces decoradas según tus gustos.
+              Nuestras impresiones de alta calidad son altamente competentes en el mercado de la decoración.</p>
           </div>
           <a href="#" class="botonCompra">COMPRAR</a>
         </div>
@@ -222,6 +296,7 @@
   <!-- FIN PRODUCTOS -->
 
 
+
   <!-- CONTACTO -->
   <a name="contacto"></a>
   <section class="contactUs">
@@ -233,12 +308,14 @@
 
     <div class="redes">
       <h3><img src="./images/insta.png" height="40px" width="40px"> Seguinos</h3>
-      <a style="color: white;" href="https://www.instagram.com/duimpresiones3d/?hl=es" target="_blank">Nuestro instagram</a>
+      <a style="color: white;" href="https://www.instagram.com/duimpresiones3d/?hl=es" target="_blank">Nuestro
+        instagram</a>
     </div>
 
     <div class="ubicacion">
       <h3><img src="./images/ubi.png" height="40px" width="40px"> Ubicación</h3>
-      <a style="color: white;" href="https://www.google.com.ar/maps/place/Constancio+C.+Vigil+495,+C%C3%B3rdoba/@-31.3538574,-64.1698968,17z/data=!4m5!3m4!1s0x943299c7034e8de7:0x9b69de045683bfd1!8m2!3d-31.3524006!4d-64.1684148"
+      <a style="color: white;"
+        href="https://www.google.com.ar/maps/place/Constancio+C.+Vigil+495,+C%C3%B3rdoba/@-31.3538574,-64.1698968,17z/data=!4m5!3m4!1s0x943299c7034e8de7:0x9b69de045683bfd1!8m2!3d-31.3524006!4d-64.1684148"
         target="_blank">Ver Mapa</a>
     </div>
 
@@ -268,15 +345,10 @@
 
 
   <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
 </body>
 
 </html>
