@@ -126,8 +126,6 @@
     transition: all 0.7s ease-in-out 0.3s;
 }
 
-
-
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -162,12 +160,32 @@
 .card-img-top:hover{
     filter: opacity(.5);
 }
-
-
 .botonCompra:hover{
     font-weight: bold;
     color: black;
     background-color: gray;
+}
+
+
+.claseProductos{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+.barraLateralProductos{
+    grid-column: 1;
+    background-color: aqua;
+    
+}
+.barraLateralProductos ul li{
+    list-style:none;
+}
+.barraLateralProductos ul li:hover{
+    color: red;
+    cursor: pointer;
+}
+.cuerpoProductos{
+    grid-column: 2;
+    background-color: saddlebrown;
 }
 
 @media (max-width: 767px) {
