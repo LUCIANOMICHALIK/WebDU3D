@@ -1,0 +1,283 @@
+*{
+    font-family:"Raleway",Verdana;
+}
+
+ul{
+    list-style:none 
+}
+.navRegister{
+    height: 50px;
+    display: flex;
+    align-items : center;
+    justify-content: left;
+    background-color: #011f4b;
+}
+
+.registerEncabezado{
+    height: 35vh;
+    display: flex;
+    align-items : center;
+    justify-content: center;
+    background-color: #011f4b;
+    color: white;
+}
+
+.registerMain{
+    height: 65vh;
+    background-color:#b3cde0;
+    display: grid;
+    grid-template-rows: repeat(4,70px);
+    grid-template-columns: 2fr 4fr 2fr;
+}
+
+.botonCompra{
+    width: fit-content;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: #011f4b; 
+    border-color: #011f4b;
+    color: #fff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+
+.ingresoUser{
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.ingresoPass{
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.ingresoPass2{
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.botonRegistro{
+    grid-row: 4;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.desktop.socials.flotante {
+    position: fixed;
+    bottom: 75px;
+    right: 5px;
+    font-size: 35px;
+    background-image: url("http://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png");
+    color: white;
+    height: 100px;
+    width: 100px;
+    font-weight: 300;
+    line-height: 0;
+    z-index: 4;
+    padding: 0;
+    margin: 0 -2px 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in-out 0.2s;
+}
+
+.desktop.socials.flotante:hover{
+    filter: opacity(.5);
+}
+
+.movil.socials.flotante {
+    position: fixed;
+    bottom: 75px;
+    right: 5px;
+    font-size: 35px;
+    background-image: url("http://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png");
+    color: white;
+    height: 55px;
+    width: 55px;
+    font-weight: 300;
+    line-height: 0;
+    z-index: 4;
+    padding: 0;
+    margin: 0 -2px 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.top{
+    background: #005bb3 repeat scroll 0 0;
+    bottom: 3px;
+    cursor: pointer;
+    height: 40px;
+    letter-spacing: 0.05em;
+    position: fixed;
+    right: 3px;
+    transition: all 0.7s cubic-bezier(0.54, -0.65, 0.13, 1.73) 0.3s;
+    width: 40px;
+    z-index: 4;
+    border-radius: 50px;
+}
+
+.contactUs{
+    height: max-content;
+    color: rgb(255, 255, 255);
+    background-color: #011f4b;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.card-img-top:hover{
+    filter: opacity(.5);
+}
+.botonCompra:hover{
+    font-weight: bold;
+    color: black;
+    background-color: gray;
+}
+
+.card-img-top{
+    width: 150px;
+    height: 250px;
+}
+.claseProductos{
+    /* background: chocolate; */
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    border: 2px solid #212529
+}
+.imagenProductos{
+    grid-column: 1;
+    background-color: rgb(195, 236, 236);
+    padding-top: 30px;   
+}
+.cuerpoProductos{
+    grid-column: 2;
+    background-color: rgb(223, 214, 207);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    
+}
+/* .precioProductos{
+    grid-column: 3;
+    background-color: rgb(90, 240, 30);
+    text-align: center;
+} */
+.barraLateralProductos ul li{
+    list-style:none;
+}
+.barraLateralProductos ul li:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.mapaContacto{
+    padding-top:50px;
+    width: 100vw;
+    height: 25vh;
+}
+.gridContacto{
+    margin-top: 60vh;
+    margin-left: 5vw;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+.asideContacto{
+    grid-column: 1;
+    /* background-color:palegoldenrod; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    
+}
+.mainContacto{
+    grid-column: 2;
+    /* background-color: rgb(223, 214, 207); */
+}
+.inputForms{
+    width: 45%;
+    border-radius: 10px;
+    border: 1px solid #212529;
+    margin: 5px;
+    
+}
+.consultaForms{
+    width: 92%;
+    height: 25vh;
+    border-radius: 10px;
+    border: 1px solid #212529;
+    margin: 5px;
+    
+}
+
+.submitForm{
+    width: 92%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #212529;
+    margin: 5px;
+    color: #fff;
+    font-size: 20px;
+    background: #6f767c;
+}
+.submitForm:hover{
+    
+    background: #313b44;
+}
+
+main{
+    padding-top: 20px;
+}
+
+
+
+@media (max-width: 767px) {
+    .desktop{
+        display: none;
+    }
+}
+
+@media(min-width: 768px){
+    .movil{
+        display: none;
+    }
+}
+  
+
+

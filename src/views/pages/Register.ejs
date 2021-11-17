@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include("../parcials/head.ejs") %>
+</head>
+<body>
+    <div class="registerEncabezado">
+        <h1>Hola,<br>ingresa tus datos para continuar</h1>
+    </div>
+
+    <div class="registerMain">
+        <div class="ingresoUser">
+            <img src="./images/user.png" height="20px" width="20px" alt=""> <input class="registerUser" type="text" placeholder="Nombre de usuario">
+        </div>    
+        <div class="ingresoPass">
+            <img src="./images/pass.png" height="20px" width="20px" alt=""> <input class="passNewUser" type="password" placeholder="Contraseña">
+        </div>            
+        <div class="ingresoPass2">
+            <img src="./images/pass.png" height="20px" width="20px" alt=""> <input class="pass2NewUser" type="password" placeholder="Repetir contraseña">
+        </div>             
+        <div class="botonRegistro">
+            <input onclick="registerIN()" type="submit" value="Registrarse">
+        </div>       
+        
+    </div>
+    
+    <script src="./js/jsDU.js"></script> 
+
+</body>
+</html>

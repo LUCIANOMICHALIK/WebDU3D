@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%-include("../parcials/head.ejs") %>
+</head>
+
+<body>
+  <!-- Para que al llegar al final me permita volver al top -->
+  <a name="top"></a>
+
+  <!-- NAV -->
+  <%-include("../parcials/header.ejs") %>
+    <!-- FIN NAV -->
+  
+  
+  <div class="claseProductos">
+    <aside class="imagenProductos">
+      <%-include("../parcials/sideProducts.ejs") %>
+    </aside>
+
+    <main class="cuerpoProductos">
+        <% products.forEach(product => { %>
+          <div class="card" style="width: 18rem;">
+            <img src="images/products/hogar/<%-product.category%>" class="card-img-top" alt="IMG1">
+            <div class="card-body">
+              <h5 class="card-title"><%-product.name%></h5>
+              <p class="card-text">DISPONIBLE</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        <% }) %>
+    </main>
+  </div>
+
+   
+  <%-include("../parcials/footer.ejs")%>
+  
+</body>
+
+</html>
+
+
+
