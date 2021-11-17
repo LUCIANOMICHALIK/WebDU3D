@@ -12,6 +12,7 @@ indexRoutes.get("/contact",contactUs)
 indexRoutes.get("/login",login)
 indexRoutes.get("/register",register)
 
+
 indexRoutes.post("/",sendAnEmail)
 
 // indexRoutes.post("/contact",sendConsulta)

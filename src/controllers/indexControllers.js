@@ -19,4 +19,6 @@ const register = (req, res) => {
 
 }
 
+
+
 module.exports={idx,contactUs,login,register}
