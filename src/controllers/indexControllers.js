@@ -1,16 +1,17 @@
+const dataUsers = require("../basicUsers.json")
 
 const idx = (req, res) => {
-    res.render('pages/index')
+    res.render('pages/index',{data:dataUsers})
 
 }
 
 const contactUs = (req, res) => {
-    res.render('pages/contact')
+    res.render('pages/contact',{data:dataUsers})
 
 }
 
 const login = (req, res) => {
-    res.render('pages/Login')
+    res.render('pages/Login',{data:dataUsers})
 
 }
 

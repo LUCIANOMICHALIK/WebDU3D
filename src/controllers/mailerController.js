@@ -1,4 +1,6 @@
 const transporter = require('../../config/mailer')
+const dataUsers = require("../basicUsers.json")
+
 
 require('dotenv').config()
 
@@ -20,7 +22,7 @@ const sendAnEmail=(req,res)=>{
             console.log(error)
         }
         else
-            res.render('pages/index')
+            res.render('pages/index',{data:dataUsers})
     })
 }
 

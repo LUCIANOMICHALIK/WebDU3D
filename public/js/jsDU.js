@@ -1,9 +1,14 @@
 // const DBconection = require("../../config/database")
+// const users = require("../../src/basicUsers.json")
 
-function userIN(){
+function userIN(data){
     let usuario = document.querySelector("#ingresoDatos")
     let pass = document.querySelector("#ingresoPass")
     
+    data.forEach(el => {
+        console.log(el)
+    });
+
     if(usuario.value != "" && pass.value != ""){
         location.href= '/'
     }

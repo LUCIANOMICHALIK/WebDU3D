@@ -1,39 +1,35 @@
-<nav>
-    <div style="background-color: #011f4b;" class="navbar navbar-expand-md navbar-dark fixed-top">
 
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">DU 3D</a>
+<div style="background-color: #2A2A2A;" class="navbar navbar-expand-md navbar-dark fixed-top">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">DU 3D</a>
 
-
-        <div class="collapse navbar-collapse" id="miMenu">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/register">Registrate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/login">Ingresar</a>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button style="background-color: #011f4b; border: 0ch;" class="nav-link active" type="button" id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown" aria-expanded="false">Productos</button>                  
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="/hogar">HOGAR</a></li>
-                  <li><a class="dropdown-item" href="/nav">NAVIDAD</a></li>
-                  <li><a class="dropdown-item" href="/fans">FANS</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/contact">Contacto</a>
-            </li>
-          </ul>
-          
-        </div>
-      </div>
+    <div class="collapse navbar-collapse" id="miMenu">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/register">Registrate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/login">Ingresar</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button style="background-color: #2A2A2A; border: 0ch;" class="nav-link active" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">Productos</button>                  
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="/hogar">HOGAR</a></li>
+              <li><a class="dropdown-item" href="/nav">NAVIDAD</a></li>
+              <li><a class="dropdown-item" href="/fans">FANS</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/contact">Contacto</a>
+        </li>
+      </ul>
+      
     </div>
-  </nav>
+  </div>
+  <h5 style="color: white;">Bienvenido <%=data[1].user%></h5>
+</div>
+  

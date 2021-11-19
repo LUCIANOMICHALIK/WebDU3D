@@ -10,9 +10,11 @@
   <a name="top"></a>
 
   <!-- NAV -->
-  <%-include("../parcials/header.ejs") %>
+  <nav>
+    <%-include("../parcials/header.ejs") %>
+  </nav>
   <!-- FIN NAV -->
-
+  
   <!-- CARRUSEL -->
   <main>
     <video src="images/1.mp4" autoplay muted loop width="100%"></video>
@@ -26,7 +28,7 @@
     <hr class="featurette-divider">
 
     <div class="row">
-      <h2 class="featurette-heading">Lo que siempre soñaste <span class="text-muted">se puede hacer realidad</span></h2>
+      <h2 class="featurette-heading"><a class="linkDU" href="/hogar">Lo que siempre soñaste se puede hacer realidad</span></a> </h2>
     </div>
 
     <div class="row">
@@ -34,15 +36,15 @@
       <div class="card-group">
 
         <div class="card">
-          <img src="images/card1_1.jpg" class="card-img-top" alt="card1_1">
+          <img src="images/card1_1.jpg" alt="card1_1">
           <div class="card-body">
             <h5 class="card-title">Sostén para auriculares</h5>
             <p class="card-text">Ideal para que tus auriculares gamers no queden tirados en cualquier lugar.</p>
           </div>
           <!-- Button trigger modal -->
-          <button type="button" class="botonCompra" data-toggle="modal" data-target="#modalAuris">COMPRAR</button>
+          <!-- <button type="button" class="botonCompra" data-toggle="modal" data-target="#modalAuris">COMPRAR</button> -->
           <!-- Modal -->
-          <div class="modal fade" id="modalAuris" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          <!-- <div class="modal fade" id="modalAuris" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -67,19 +69,19 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="card">
-          <img src="./images/card1_2.jpg" class="card-img-top" alt="card1_2">
+          <img src="./images/card1_2.jpg" alt="card1_2">
           <div class="card-body">
             <h5 class="card-title">Litofanías</h5>
             <p class="card-text">Tus fotos impresas en 3D pueden revelarse con luz y generar un efecto único. Conseguilo
               listo para ser usado.</p>
           </div>
-          <button type="button" class="botonCompra" data-toggle="modal" data-target="#modalLito">COMPRAR</button>
+          <!-- <button type="button" class="botonCompra" data-toggle="modal" data-target="#modalLito">COMPRAR</button> -->
           <!-- Modal -->
-          <div class="modal fade" id="modalLito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          <!-- <div class="modal fade" id="modalLito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -98,19 +100,19 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="card">
-          <img src="./images/card1_3.jpg" class="card-img-top" alt="card1_3">
+          <img src="./images/card1_3.jpg" alt="card1_3">
           <div class="card-body">
             <h5 class="card-title">Extensor para celulares</h5>
             <p class="card-text">Especial para grabaciones o para sostener el celular mientras se hacen otras
               actividades.</p>
           </div>
-          <button type="button" class="botonCompra" data-toggle="modal" data-target="#modalExten">COMPRAR</button>
+          <!-- <button type="button" class="botonCompra" data-toggle="modal" data-target="#modalExten">COMPRAR</button> -->
           <!-- Modal -->
-          <div class="modal fade" id="modalExten" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          <!-- <div class="modal fade" id="modalExten" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -129,7 +131,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
       </div>
@@ -139,8 +141,7 @@
     <hr class="featurette-divider">
 
     <div class="row">
-      <h2 class="featurette-heading">Ahora como fanático <span class="text-muted">podés tener lo que quieras.</span>
-      </h2>
+      <h2 class="featurette-heading"><a href="/fans" class="linkDU">Ahora como fanático podés tener lo que quieras</a></h2>
     </div>
 
     <div class="row">
@@ -148,32 +149,32 @@
       <div class="card-group">
 
         <div class="card">
-          <img src="./images/card2_1.jpg" class="card-img-top" alt="card2_1">
+          <img src="./images/card2_1.jpg" alt="card2_1">
           <div class="card-body">
             <h5 class="card-title">Harry Potter</h5>
             <p class="card-text">Las varitas para los fans ya no son una cosa lejana. Imprimí todo lo que quieras de
               esta saga y sentite uno más del Wizarding World.</p>
           </div>
-          <a href="#" class="botonCompra">COMPRAR</a>
+          <!-- <a href="#" class="botonCompra">COMPRAR</a> -->
         </div>
 
         <div class="card">
-          <img src="./images/card2_2.jpg" class="card-img-top" alt="card2_2">
+          <img src="./images/card2_2.jpg" alt="card2_2">
           <div class="card-body">
             <h5 class="card-title">Star Wars</h5>
             <p class="card-text">Muñecos, llaveros, cuadros, replicas a escala y todo lo que quieras de Star Wars.</p>
           </div>
-          <a href="#" class="botonCompra">COMPRAR</a>
+          <!-- <a href="#" class="botonCompra">COMPRAR</a> -->
         </div>
 
         <div class="card">
-          <img src="./images/card2_3.jpg" class="card-img-top" alt="card2_3">
+          <img src="./images/card2_3.jpg" alt="card2_3">
           <div class="card-body">
             <h5 class="card-title">Pokemón</h5>
             <p class="card-text">Si sos fan de esta u otras series no dejes de pedirnos lo que siempre soñaste tener.
             </p>
           </div>
-          <a href="#" class="botonCompra">COMPRAR</a>
+          <!-- <a href="#" class="botonCompra">COMPRAR</a> -->
         </div>
 
       </div>
@@ -183,40 +184,40 @@
     <hr class="featurette-divider">
 
     <div class="row">
-      <h2 class="featurette-heading">Decorar tu casa nunca fue tan fácil <span class="text-muted">y barato.</span></h2>
+      <h2 class="featurette-heading"><a href="/hogar" class="linkDU">Decorar tu casa nunca fue tan fácil y barato</a></h2>
     </div>
 
     <div class="row">
 
       <div class="card-group">
         <div class="card">
-          <img src="./images/card3_1.jpg" class="card-img-top" alt="card3_1">
+          <img src="./images/card3_1.jpg" alt="card3_1">
           <div class="card-body">
             <h5 class="card-title">Veladores modernos</h5>
             <p class="card-text">Este y otro estilo de veladores únicos y modernos encontralo con nosotros, vienen
               listos para ser utilizados.</p>
           </div>
-          <a href="#" class="botonCompra">COMPRAR</a>
+          <!-- <a href="#" class="botonCompra">COMPRAR</a> -->
         </div>
 
         <div class="card">
-          <img src="./images/card3_2.jpg" height="295px" class="card-img-top" alt="card3_2">
+          <img src="./images/card3_2.jpg" alt="card3_2">
           <div class="card-body">
             <h5 class="card-title">Juegos de livings y macetas</h5>
             <p class="card-text">Nada mejor que decorar tus habitaciones con un estilo moderno. Este y otro tipo de
               modelos encontralos con nosotros.</p>
           </div>
-          <a href="#" class="botonCompra">COMPRAR</a>
+          <!-- <a href="#" class="botonCompra">COMPRAR</a> -->
         </div>
 
         <div class="card">
-          <img src="./images/card3_3.jpg" class="card-img-top" alt="card3_3">
+          <img src="./images/card3_3.jpg" alt="card3_3">
           <div class="card-body">
             <h5 class="card-title">Pantallas para luces</h5>
             <p class="card-text">Ya no es necesario grandes gastos para tener tus luces decoradas según tus gustos.
               Nuestras impresiones de alta calidad son altamente competentes en el mercado de la decoración.</p>
           </div>
-          <a href="#" class="botonCompra">COMPRAR</a>
+          <!-- <a href="#" class="botonCompra">COMPRAR</a> -->
         </div>
       </div>
 

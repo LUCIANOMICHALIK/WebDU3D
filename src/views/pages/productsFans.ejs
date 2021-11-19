@@ -10,7 +10,9 @@
   <a name="top"></a>
 
   <!-- NAV -->
-  <%-include("../parcials/header.ejs") %>
+  <nav>
+    <%-include("../parcials/header.ejs") %>
+  </nav>
     <!-- FIN NAV -->
   
   
@@ -25,8 +27,9 @@
             <img src="images/products/fans/<%-product.category%>" class="card-img-top" alt="IMG1">
             <div class="card-body">
               <h5 class="card-title"><%-product.name%></h5>
-              <p class="card-text">DISPONIBLE</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <p class="card-text"><%-product.description%></p>
+              <p class="card-text">$<%-product.price%></p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
             </div>
           </div>
         <% }) %>
